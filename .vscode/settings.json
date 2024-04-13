@@ -1,0 +1,27 @@
+{
+    "editor.fontLigatures": true, // 是否启用字体连字
+    "editor.fontSize": 14,
+    "editor.tabSize": 4,
+    "editor.fontWeight": "normal",
+    "editor.fontFamily": "Consolas,'微软雅黑','Courier New', monospace",
+    "terminal.integrated.fontFamily": "Consolas,'微软雅黑','Courier New', monospace",
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${workspaceFolder};${env:PYTHONPATH}",
+    },
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${workspaceFolder};${env:PYTHONPATH}",
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/__pycache__": true,
+        "**/__init__.py": true
+    },
+    "go.testFlags": [
+        "-gcflags=all=-l"
+    ],
+}
